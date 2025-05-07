@@ -21,11 +21,12 @@ public class Task2 {
         driver.findElement(By.cssSelector("#top-menu #menu-item-849")).click();
         String actual=driver.findElement(By.id("prependedInput2")).getDomAttribute("type");
 
-        if (actual.equals("password")){
+        if ("password".equals(actual)) {
             System.out.println("PASS");
-        }else {
+        } else {
             System.out.println("FAIL");
         }
+
 
         driver.quit();
 

@@ -28,7 +28,7 @@ public class Task1 {
 
         String title = driver.getTitle();
 
-        if (title.contains("Dashboard")){
+        if ( title != null && title.contains("Dashboard")){
 
             System.out.println("PASS");
 
