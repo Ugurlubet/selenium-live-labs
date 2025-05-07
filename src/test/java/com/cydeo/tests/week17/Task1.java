@@ -28,7 +28,7 @@ public class Task1 {
 
         String title = driver.getTitle();
 
-        if (title.contains("DashBoard")){
+        if (title.contains("Dashboard")){
 
             System.out.println("PASS");
 
@@ -38,6 +38,8 @@ public class Task1 {
 
         // HOMEWORK CREATE A LOGIN METHOD
         //login(username,password,...)
+
+        driver.quit();
 
 
 
