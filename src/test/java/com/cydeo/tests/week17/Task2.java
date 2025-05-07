@@ -9,10 +9,10 @@ public class Task2 {
         /*
         * TC002 As a user I should be able to see the password hidden as default
 
-     1- Open a chrome browser
+     1- Open a chrome  browser
      2- Go to "https://vytrack.com/"
      3- Click LOGIN button
-     4- Verify the password is hidden*/
+     4- Verify the  password is hidden*/
 
 
         WebDriver driver = new ChromeDriver();
