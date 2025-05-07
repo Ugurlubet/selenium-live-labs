@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         /*
         *  TC001 As a user I should be able to login with valid credentials
 
@@ -24,7 +24,20 @@ public class Task1 {
         driver.findElement(By.id("prependedInput2")).sendKeys("User123");
         driver.findElement(By.id("_submit")).click();
 
+        Thread.sleep(5000);
+
+        String title = driver.getTitle();
+
+        if (title.contains("DashBoard")){
+
+            System.out.println("PASS");
+
+        }else {
+            System.out.println("FAIL");
+        }
+
         // HOMEWORK CREATE A LOGIN METHOD
+        //login(username,password,...)
 
 
 
